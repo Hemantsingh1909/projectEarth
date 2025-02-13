@@ -1,12 +1,8 @@
-import { cn } from "../../../utils/cn";
+import { cn } from "../../utils/cn";
 import Stars from "./stars"; // Default import
 import Meteors from "./meteors"; // Default import
 
-const universe = ({
-  numberOfStars = 500,
-  numberOfMeteors = 10,
-  className,
-}) => {
+const universe = ({ numberOfStars = 500, numberOfMeteors = 10, className }) => {
   return (
     <div className={cn("absolute inset-0", className)}>
       {/* Stars - Background Layer */}

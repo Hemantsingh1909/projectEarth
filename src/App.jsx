@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import createGlobe from "cobe";
-import Universe from "./components/ui/universe";
+import Universe from "./components/universe";
 
 function App() {
   const canvasRef = useRef();
