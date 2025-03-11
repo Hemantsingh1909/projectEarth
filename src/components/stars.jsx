@@ -1,6 +1,7 @@
 import { cn } from "../../utils/cn";
+import PropTypes from "prop-types";
 
-const stars = ({
+const Stars = ({
   number = 200,
   className,
   starColor = "bg-white",
@@ -42,4 +43,12 @@ const stars = ({
   );
 };
 
-export default stars; // Default export
+Stars.propTypes = {
+  number: PropTypes.number,
+  className: PropTypes.string,
+  starColor: PropTypes.string,
+  starSize: PropTypes.string,
+  animate: PropTypes.bool,
+};
+
+export default Stars; // Default export

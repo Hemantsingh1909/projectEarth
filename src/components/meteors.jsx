@@ -1,6 +1,7 @@
 import { cn } from "../../utils/cn";
+import PropTypes from "prop-types";
 
-const meteors = ({
+const Meteors = ({
   number = 10,
   className,
   meteorColor = "bg-white-900",
@@ -46,4 +47,13 @@ const meteors = ({
   );
 };
 
-export default meteors; // Default export
+Meteors.propTypes = {
+  number: PropTypes.number,
+  className: PropTypes.string,
+  meteorColor: PropTypes.string,
+  meteorSize: PropTypes.string,
+  trailLength: PropTypes.string,
+  animate: PropTypes.bool,
+};
+
+export default Meteors; // Default export

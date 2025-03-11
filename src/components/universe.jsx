@@ -1,8 +1,9 @@
 import { cn } from "../../utils/cn";
 import Stars from "./stars"; // Default import
 import Meteors from "./meteors"; // Default import
+import PropTypes from "prop-types";
 
-const universe = ({ numberOfStars = 500, numberOfMeteors = 10, className }) => {
+const Universe = ({ numberOfStars = 500, numberOfMeteors = 10, className }) => {
   return (
     <div className={cn("absolute inset-0", className)}>
       {/* Stars - Background Layer */}
@@ -25,4 +26,10 @@ const universe = ({ numberOfStars = 500, numberOfMeteors = 10, className }) => {
   );
 };
 
-export default universe; // Default export
+Universe.propTypes = {
+  numberOfStars: PropTypes.number,
+  numberOfMeteors: PropTypes.number,
+  className: PropTypes.string,
+};
+
+export default Universe; // Default export

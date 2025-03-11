@@ -51,17 +51,22 @@ function App() {
   }, [globeSize]);
 
   return (
-    <div className="relative min-h-screen bg-black text-white overflow-hidden">
+    <div className="relative min-h-screen bg-black text-white overflow-hidden font-sans">
       {/* Universe - Background Layer */}
       <Universe numberOfStars={150} numberOfMeteors={10} />
 
-      {/* Globe - Foreground Layer */}
-      <div className="relative z-10 flex flex-col items-center justify-center">
-        <h1 className="text-4xl md:text-6xl font-bold uppercase text-center pt-10">
-          Project Earth
-        </h1>
-        <p className="text-lg text-center">- by Hemant Satwal</p>
-        <div className="w-full max-w-[600px] aspect-square flex justify-center">
+      {/* Content - Foreground Layer */}
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8">
+        <header className="mb-8 text-center">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-300 mb-2">
+            Project Earth
+          </h1>
+          <p className="text-lg text-gray-400 font-light">
+            Exploring Our Planet in 3D
+          </p>
+        </header>
+
+        <div className="w-full max-w-[600px] aspect-square flex justify-center mb-8">
           <canvas
             ref={canvasRef}
             className="w-full h-full"
@@ -69,6 +74,20 @@ function App() {
             role="img"
           />
         </div>
+
+        <footer className="text-center text-gray-500 text-sm">
+          <p>Created by Hemant Satwal</p>
+          <p className="mt-2">
+            <a
+              href="https://github.com/hemantsingh1909/projectEarth"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition-colors duration-300"
+            >
+              View on GitHub
+            </a>
+          </p>
+        </footer>
       </div>
     </div>
   );
