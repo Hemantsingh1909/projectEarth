@@ -4,7 +4,7 @@ A beautiful, interactive 3D globe visualization built with React, Vite, and Tail
 
 ## Live Demo
 
-[View Live Demo](https://hemantsingh1909.github.io/projectEarth/)
+[View Live Demo](https://project-earth-three.vercel.app/)
 
 ## Features
 
