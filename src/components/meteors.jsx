@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Meteors = ({
   number = 10,
   className,
-  meteorColor = "bg-white-900",
+  meteorColor = "bg-white",
   meteorSize = "h-1.5 w-1.5",
   trailLength = "before:w-[150px]",
   animate = true,
@@ -22,7 +22,7 @@ const Meteors = ({
           <span
             key={"meteor" + idx}
             className={cn(
-              "fixed rounded-[9999px] shadow-[0_0_0_1px_#ffffff10]",
+              "fixed rounded-[9px] shadow-[0_0_0_1px_#ffffff10]",
               "before:content-[''] before:absolute before:top-1/2 before:-translate-y-[50%] before:h-[1px] before:bg-gradient-to-r before:from-[#64748b] before:to-transparent",
               animate && "animate-meteor-effect",
               meteorColor,

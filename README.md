@@ -56,6 +56,8 @@ A beautiful, interactive 3D globe visualization built with React, Vite, and Tail
 
 ## Deployment
 
+### GitHub Pages
+
 To deploy to GitHub Pages:
 
 ```bash
@@ -63,6 +65,34 @@ npm run deploy
 # or
 yarn deploy
 ```
+
+### Vercel
+
+This project is configured for easy deployment on Vercel.
+
+1. Install the Vercel CLI:
+
+   ```bash
+   npm install -g vercel
+   ```
+
+2. Login to Vercel:
+
+   ```bash
+   vercel login
+   ```
+
+3. Deploy to Vercel:
+   ```bash
+   vercel
+   ```
+
+Alternatively, you can connect your GitHub repository to Vercel for automatic deployments:
+
+1. Go to [Vercel](https://vercel.com) and sign up or log in
+2. Click "New Project" and import your GitHub repository
+3. Configure the project settings (the defaults should work fine)
+4. Click "Deploy"
 
 ## License
 
